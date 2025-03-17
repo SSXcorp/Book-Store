@@ -9,7 +9,7 @@ import org.hibernate.Transaction;
 
 public class BookRepositoryImpl implements BookRepository {
 
-    private SessionFactory sessionFactory;
+    private final SessionFactory sessionFactory;
 
     public BookRepositoryImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
